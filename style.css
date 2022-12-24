@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Roboto:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+* {
+    /*page ke side mein jo gap aa raha tha, gone now*/
+    margin: 0;
+    padding: 0;
+}
+
+
+.sidebar {
+    background-color: rgb(223, 218, 218);
+    position: absolute;/*ab kya hoga ki yeh page se alag ho gaya, toh jab responsive design mein jaayenge tab yeh main content ko nahi dhakelega*/
+    /* width: 434px; */
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition:transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 34px;
+    font-size: 30px;
+}
+
+.sidebar nav li {
+    list-style: none; /*the pointers in home,know me,services,cv...gone now! */
+    font-size: 25px;
+    padding: 33px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;/*underlines from hyperlinks gone*/
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infoContainer {
+    /* background-color: green; */
+    width: 80vw;
+    height: 66vh;
+    margin: 143px auto;
+    /*margin top 143 taaki woh thoda neeche aa jaaye aur auto taaki center ho jaaye*/
+    display: flex;
+    justify-content: space-around; /*picture ek side aa jayegi aur text ek side, note ki iske liye display flex hona zaruri hai*/
+
+}
+.devInfo{
+    font-size: 16px;
+    display:flex;
+    justify-content: center; /*cheezon ko vertically align karne ke liye*/
+    flex-direction:column;/*justify content karne se direction change ho gayi thi flex ki*/
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+.hello{     /*the classes hello,name,about and buttons belong to devInfo rn*/
+font-size: 3em;
+}
+.Name{
+font-size:3em;
+font-weight: bold;
+font-family: 'Fira Sans', sans-serif;
+}
+.About{
+    font-size: 2.5em;
+}
+.MoreAboutme{
+font-size:2em;
+margin-top: 23px;
+font-family: 'Fira Sans', sans-serif;
+}
+.buttons{
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor:pointer;
+}
+.btn-sm{
+    font-size:15px;
+    padding: 10px 17px;
+    margin:10px 0;
+    margin-left: 38px;
+}
+.btn:hover{
+    background-color: white;
+    color:dodgerblue;
+}
+.devPic img{
+    height: 66vh;/*infoContainer ke hisab se ab height ghate badegi*/
+}
+.contactform{
+    padding:0 34px;
+    /* padding-top: 144px; */
+    font-family: 'Fira Sans', sans-serif;
+    margin: 88px;
+    
+}
+.contactform form div{
+    padding: 10px 0;
+    display:flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    /* width:26vw; */
+    border-radius: 5px;
+    margin:6px 0 0 0;
+    padding:3px
+}
+.contactform form div{
+    margin:0 40px;
+}
+/* .contactform h1{
+    font-family: 'Fira Sans', sans-serif;
+     padding: 12px 0; 
+} */
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding:3px 0 0 0;
+}
+#form-check{
+flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 2px 0;
+}
+.blogItem{
+    margin: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.blogContainer{
+   margin:  88px; 
+}
+h1{
+    font-family: 'Fira Sans', sans-serif;
+    margin:23px;
+    margin-left: 41px;
+}
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+.intro{
+    margin: 88px;
+}
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin:12px;
+}
+.skillContainer{
+padding:12px;
+}
+.skillItem{
+    display:flex;
+    align-items: center;
+    width:225px;
+    background-color: grey;
+}
+/* .skill{
+    width:265px;
+    height:6px;
+    background-color: red;
+    border:2px solid black;
+} */
+
+/* .skillC{
+    width:100%;
+    background-color: grey;
+} */
+.skillH{
+    width:90%;
+    background-color: blueviolet;
+    text-align:right;
+    font-weight: bold;
+}
+.skillC{
+    width:50%;
+    background-color: aqua;
+    text-align:right;
+    font-weight: bold;
+}
+.skillJ{
+    width:75%;
+    background-color: yellow;
+    text-align:right;
+    font-weight: bold;
+}
+.skillJS{
+    width:25%;
+    background-color: blue;
+    text-align:right;
+    font-weight: bold;
+}
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+    }
+.hamburger{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+}
+.ham{
+    margin-top:5px;
+    margin-left: 5px;
+
+}
+.cross{
+    margin-left:155px;
+    margin-top:5px;
+}
+@media(max-width:1737px){/* this added to help make our website responsive*/
+    .devPic{
+        display: none;
+    }
+    .buttons{
+        font-size: 6px;
+    }
+    .intro,.blogContainer{
+        margin: 50px 8px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+   
+   /* .sidebar {
+    transform: translate(-443px, 0px);
+    position: absolute;
+    } */
+   /* *{background-color: red;
+   } */
+}
